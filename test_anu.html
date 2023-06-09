@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <fieldset>
+        <h1>Payment form</h1>
+    </fieldset>
+    <br>
+    <h3>Contact Information</h3>
+    <P>Mandatory fields are marked in *</P>
+    <label for="name">Name:*</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <br>
+    <fieldset>
+        <legend>GENDER*</legend>
+        <br>
+         <p style="text-align: center;">
+            <label for="male">Male</labl>
+                <input type="radio" id="male" name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" required>
+                <label for="others">Others</label>
+                <input type="radio" id="others" name="gender" required>
+         </p>
+         <br>
+    </fieldset>
+    <br>
+    <label for="add" style="font-size: large;">Address:</label>
+    <br>
+    <textarea name="add" id="add" cols="30" rows="10"></textarea>
+    <br>
+    <br>
+    <label for="email" style="font-size: large;">Email:</label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <input type="email" id="email" name="email" placeholder="asc15.lko@gmail.com">
+    <br>
+    <br>
+    <label for="pincode" style="font-size: large;">Pincode:*</label>
+    <input type="number" id="pincode" name="pincode"  placeholder="226025">
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>Payment Information</h2>
+    <br>
+    <label for="Card Type:*">Card Type:*</label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <select name="Card Type" id="Card Type" required>
+        <option value="">Select Card Type--</option>
+        <option value="visa">VISA CARD</option>
+        <option value="master">MASTER CARD</option>
+        <option value="debit">DEBIT CARD</option>
+    </select>
+    <br>
+    <br>
+    <label for="card no">Card Number:*</label>
+    &nbsp;
+    <input type="number" id="card no" name="card no" maxlength="10" required>
+    <br>
+    <br>
+    <label for="expiration date">Expiration date:*</label>
+    <input type="date" id="expiration date" name="expiration date" required>
+    <br>
+    <br>
+    <label for="cvv">CVV:*</label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <input type="password" name="cvv" id="cvv" maxlength="4" required>
+    <br>
+    <br>
+    <input type="submit" value="Pay Now" class="submit-btn">
+    <input type="submit" value="Reset" class="Reset">
+    
+</body>
+</html>
